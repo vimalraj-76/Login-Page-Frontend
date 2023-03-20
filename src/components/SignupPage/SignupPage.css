@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Valneck';
+    src: url('../Valneck.otf') format('opentype'); /* add the .otf file here */
+    font-weight: normal; /* you can also specify other font weights/styles here */
+    font-style: normal;
+  }
+
+h1{
+    font-family: 'Valneck';
+    padding-top: 35px;
+    font-size: 40px;
+}
+
+.signupPage{
+    background-image: linear-gradient(to right bottom, #f479bf, #e184d1, #cc8edf, #b598e7, #9fa0ea, #8cabf2, #7ab5f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

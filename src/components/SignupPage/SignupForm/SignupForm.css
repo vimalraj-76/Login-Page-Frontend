@@ -1,0 +1,83 @@
+.signup-button
+{
+    border: 2px solid red;
+    margin-top: 20px;
+    color: aliceblue;
+    color: aliceblue;
+    background-color: #212425;
+    text-decoration: none;
+    border: none;
+    font-family: fantasy;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container{
+    max-width: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.form-container form{
+    height: fit-content;   
+}
+
+.form-container form label{
+    width:100%;
+    font-family:monospace;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+}
+
+
+.form-container form label input{
+    display: flex;
+}
+
+.form-container form label select{
+    display: flex;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    width: 325px;
+    font-size: 16px;
+    align-items: flex-start;
+} 
+.login-button
+{
+    border: 2px solid red;
+    margin-top: 20px;
+    color: aliceblue;
+    color: aliceblue;
+    background-color: #212425;
+    text-decoration: none;
+    border: none;
+    font-family: fantasy;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.formElements
+{
+    display: flex;
+    flex-direction:row;
+    align-items:stretch;
+}
+
+.login-button:hover, .signup-button:hover{
+    background-color: #f479bf;
+    color: #212425;
+  }

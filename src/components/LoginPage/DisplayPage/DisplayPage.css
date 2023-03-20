@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Valneck';
+    src: url('../../Valneck.otf') format('opentype'); /* add the .otf file here */
+    font-weight: normal; /* you can also specify other font weights/styles here */
+    font-style: normal;
+  }
+
+.display-page{
+    padding: 20px;    
+}
+
+.display-page .logo{
+    display: flex;
+    justify-content: center;
+}
+
+.display-page .logo img{
+    width:auto;
+    height:180px;
+}
+
+.display-page .profile{
+    font-family: 'Valneck';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 5px 35px 5px;
+}
+
+.display-page .greeting{
+    font-family: 'Valneck';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 35px 5px 35px 5px;
+}
+
+.display-page .credential-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.display-page .credential-container .credentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 10px 50px 25px 50px;
+    width: max-content;
+    fill-opacity: 50%;
+    height:fit-content;
+}
+
+.display-page .credential-container .credentials .cred-element,
+.display-page .credential-container .credentials .log-out
+{
+    display: flex;
+    justify-content: center;
+}
+
+.log-out{
+  color: aliceblue;
+  background-color: #212425;
+  text-decoration: none;
+  border: none;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cred-element p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.userField
+{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    display:'flex';
+    justify-content:"center";
+    align-items: center;
+    padding-bottom: 10px;
+}
+.userValue
+{
+    display:'flex';
+    justify-content:"center";
+    align-items: center;
+    font-size: large;
+}
+.log-out:hover{
+    background-color: #f479bf;
+    color: #212425;
+  }
