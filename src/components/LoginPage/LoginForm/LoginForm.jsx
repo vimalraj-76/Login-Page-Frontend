@@ -42,7 +42,7 @@ function LoginForm() {
             gender:response.data.gender,
             country:response.data.country,
             dob:response.data.dob}
-          navigate('https://login-page-backend-3.onrender.com/index',{state:propsData});
+          navigate('/index',{state:propsData});
         }
       }
       catch (error) 
