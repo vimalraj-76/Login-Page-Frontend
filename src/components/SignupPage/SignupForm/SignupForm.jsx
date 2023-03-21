@@ -136,7 +136,7 @@ function SignupForm() {
       </div>
       <NavLink onClick={handleSubmit} className='signup-button'><span>Sign Up</span></NavLink>
       <div className='info'><p>Already an User? <strong>Login below !!</strong></p></div>
-      <NavLink to="https://login-page-backend-3.onrender.com/login" className='login-button'><span>Log In</span></NavLink>
+      <NavLink to="/" className='login-button'><span>Log In</span></NavLink>
     </form>
     </div>);
 }
