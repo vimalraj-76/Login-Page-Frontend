@@ -47,7 +47,7 @@ const DisplayPage = () => {
                 <div className='cred-element'>
                     <p><div className="userField"><strong>Date of birth</strong></div><div className='userValue' style={{justifyContent:"center",display:"flex"}}> {new Date(user.dob).toLocaleDateString()}</div></p>
                 </div>
-                <NavLink to='https://login-page-backend-3.onrender.com/login' className='log-out'><span>Log Out</span></NavLink> 
+                <NavLink to='/login' className='log-out'><span>Log Out</span></NavLink> 
             </div>
         </div>
         <br/>

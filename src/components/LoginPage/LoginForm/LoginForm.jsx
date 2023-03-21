@@ -70,7 +70,7 @@ function LoginForm() {
       </div>
       <button className='submit-btn' type='submit'><span>Log In</span></button>
       <div className='option'><p>Not an user ? <strong>Create a new account</strong></p></div>
-      <NavLink to="https://login-page-backend-3.onrender.com/signup" className='signup-btn'><span>Sign up</span></NavLink>
+      <NavLink to="/signup" className='signup-btn'><span>Sign up</span></NavLink>
     </form>
   );
   }
