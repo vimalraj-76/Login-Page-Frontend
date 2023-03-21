@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Valneck';
-    src: url('../Valneck.otf') format('opentype'); /* add the .otf file here */
-    font-weight: normal; /* you can also specify other font weights/styles here */
-    font-style: normal;
-  }
+  font-family: 'atom';
+  src: url('../AtomedBold.otf') format('opentype'); /* add the .otf file here */
+  font-weight: normal; /* you can also specify other font weights/styles here */
+  font-style: normal;
+}
 
   .login-heading
   {
@@ -11,24 +11,26 @@
       justify-content: center;
       align-items: center;
       font-size: 40px;
-      padding-top: 35px;
-      font-family: 'Valneck', sans-serif;
+      font-family: 'atom', sans-serif;
+      text-shadow: 1px 1px 1px rgb(113, 112, 112);
   }
 
   .login-mainPage
   {
-    height:130vh;
-    padding-top: 1%;
+    height:100%;
+    padding-top: 0.5%;
+    padding-bottom: 5%;
   }
 
 .logo{
     display: flex;
     justify-content: center;
+    padding-bottom: 2%;
 }
 
 .logo img{
     width:auto;
-    height:180px;
+    height:240px;
 }
 
   

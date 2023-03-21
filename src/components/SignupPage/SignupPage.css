@@ -1,20 +1,25 @@
 @font-face {
-    font-family: 'Valneck';
-    src: url('../Valneck.otf') format('opentype'); /* add the .otf file here */
+    font-family: 'atom';
+    src: url('../AtomedBold.otf') format('opentype'); /* add the .otf file here */
     font-weight: normal; /* you can also specify other font weights/styles here */
     font-style: normal;
   }
 
 h1{
-    font-family: 'Valneck';
+    font-family: 'atom';
     padding-top: 35px;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
     font-size: 40px;
 }
 
-.signupPage{
-    background-image: linear-gradient(to right bottom, #f479bf, #e184d1, #cc8edf, #b598e7, #9fa0ea, #8cabf2, #7ab5f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+.signupPage{background-image: linear-gradient(to right top, #549bcc, #3cabd1, #30bacf, #40c7c8, #61d3bc, #52d2c1, #3fd2c6, #24d1cb, #00c0e4, #00abef, #6b90e6, #a270c4);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo img{
+    width:auto;
+    height:240px;
 }

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Valneck';
-    src: url('../../Valneck.otf') format('opentype'); /* add the .otf file here */
+    font-family: 'atom';
+    src: url('../../AtomedBold.otf') format('opentype'); /* add the .otf file here */
     font-weight: normal; /* you can also specify other font weights/styles here */
     font-style: normal;
   }
@@ -20,16 +20,18 @@
 }
 
 .display-page .profile{
-    font-family: 'Valneck';
+    font-family: 'atom';
     display: flex;
+    font-size: 40px;
     justify-content: center;
     text-align: center;
     margin: 0px 5px 35px 5px;
 }
 
 .display-page .greeting{
-    font-family: 'Valneck';
+    font-family: 'atom';
     display: flex;
+    font-size: 25px;
     justify-content: center;
     text-align: center;
     margin: 35px 5px 35px 5px;
@@ -65,9 +67,11 @@
   background-color: #212425;
   text-decoration: none;
   border: none;
+  font-family:monospace;
+  text-shadow: 1px 1px 1px rgb(113, 112, 112);
   margin-top: 30px;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px 20% 10px 20%;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -92,7 +96,43 @@
     align-items: center;
     font-size: large;
 }
-.log-out:hover{
-    background-color: #f479bf;
-    color: #212425;
+
+
+  .log-out:hover{
+    background-color: #0d9aff;
+    color: black;
   }
+
+  .log-out span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.7s;
+  }
+  .log-out span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .log-out:hover span {
+    padding-right: 15px;
+  }
+  .log-out:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.developer
+{
+    text-align: center;
+    font-family:monospace;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
+}
+a{
+    font-family: 'atom';
+    text-decoration: none;
+}

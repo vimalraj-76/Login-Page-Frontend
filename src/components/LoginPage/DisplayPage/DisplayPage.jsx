@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {NavLink} from 'react-router-dom';
-import profileLogo from '../../user.png';
+import profileLogo from '../../user-shapes.png';
 import './DisplayPage.css';
 import { useLocation } from 'react-router-dom';
 const DisplayPage = () => {
  const location = useLocation();
- const user={name:location.state.name,
+ const user={
+    name:location.state.name,
     phone:location.state.mobile,
     age:location.state.age,
     email:location.state.email,
@@ -15,8 +16,7 @@ const DisplayPage = () => {
 }
   return (
     <div className='display-page'>
-
-        <h1 className='profile'>My Profile</h1>
+        <h1 className='profile'>Your Profile</h1>
         <div className='logo'>
             <img src={profileLogo} alt='profile-logo'></img>
         </div>
@@ -47,10 +47,11 @@ const DisplayPage = () => {
                 <div className='cred-element'>
                     <p><div className="userField"><strong>Date of birth</strong></div><div className='userValue' style={{justifyContent:"center",display:"flex"}}> {new Date(user.dob).toLocaleDateString()}</div></p>
                 </div>
-                <NavLink to='../' className='log-out'>Log Out</NavLink> 
+                <NavLink to='https://login-page-backend-3.onrender.com/login' className='log-out'><span>Log Out</span></NavLink> 
             </div>
         </div>
-
+        <br/>
+        <div className='developer'><p>Designed and Developed by <strong><a href="https://www.linkedin.com/in/vimalraj-s-206000217/" target={'_blank'}>Vimalraj S</a></strong></p></div>
     </div>
   );
 };

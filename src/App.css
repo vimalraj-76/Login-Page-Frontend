@@ -2,6 +2,4 @@
   text-align: center;  
 }
 .main-page
-{
-  background-image: linear-gradient(to right bottom, #f479bf, #e184d1, #cc8edf, #b598e7, #9fa0ea, #8cabf2, #7ab5f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-}
+{background-image: linear-gradient(to right top, #549bcc, #3cabd1, #30bacf, #40c7c8, #61d3bc, #52d2c1, #3fd2c6, #24d1cb, #00c0e4, #00abef, #6b90e6, #a270c4);}

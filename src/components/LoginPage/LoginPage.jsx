@@ -1,6 +1,6 @@
 import React from "react";
 import LoginForm from "./LoginForm/LoginForm";
-import loginLogo from "./login.png";
+import loginLogo from "../login.png";
 import './LoginPage.css';
 function LoginPage()
 {

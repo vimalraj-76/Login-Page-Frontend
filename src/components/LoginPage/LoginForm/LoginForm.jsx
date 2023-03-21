@@ -29,7 +29,7 @@ function LoginForm() {
       {
       try
       {
-        const response = await axios.post('http://localhost:5000/login', data);
+        const response = await axios.post('https://login-page-backend-3.onrender.com/login', data);
         if (response.status===201)
         {
           const data = response.data;
@@ -42,7 +42,7 @@ function LoginForm() {
             gender:response.data.gender,
             country:response.data.country,
             dob:response.data.dob}
-          navigate('/index',{state:propsData});
+          navigate('https://login-page-backend-3.onrender.com/index',{state:propsData});
         }
       }
       catch (error) 
@@ -60,17 +60,17 @@ function LoginForm() {
     }
   return (
     <form onSubmit={handleLogin}>
-      <div>
+      <div className='label'>
         <label>Username:</label>
         <input type="text" value={email} onChange={EmailChange} />
       </div>
-      <div>
+      <div className='label'>
         <label>Password:</label>
         <input type="password" value={password} onChange={PasswordChange} />
       </div>
-      <button className='submit-btn' type='submit'>Log In</button>
-      <p>Not an user ? <strong>Create a new account</strong></p>
-      <NavLink to="signup" className='signup-btn'>Sign up</NavLink>
+      <button className='submit-btn' type='submit'><span>Log In</span></button>
+      <div className='option'><p>Not an user ? <strong>Create a new account</strong></p></div>
+      <NavLink to="https://login-page-backend-3.onrender.com/signup" className='signup-btn'><span>Sign up</span></NavLink>
     </form>
   );
   }

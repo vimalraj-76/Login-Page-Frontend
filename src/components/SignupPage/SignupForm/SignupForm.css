@@ -1,14 +1,13 @@
 .signup-button
 {
     border: 2px solid red;
-    margin-top: 20px;
-    color: aliceblue;
+    margin-top: 30px;
     color: aliceblue;
     background-color: #212425;
     text-decoration: none;
     border: none;
-    font-family: fantasy;
-    margin-top: 30px;
+    font-family:monospace;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
     border-radius: 20px;
     padding: 10px 20px;
     font-size: 16px;
@@ -16,53 +15,13 @@
     transition: background-color 0.3s ease;
 }
 
-.form-container{
-    max-width: fit-content;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    align-items: center;
-}
-
-.form-container form{
-    height: fit-content;   
-}
-
-.form-container form label{
-    width:100%;
-    font-family:monospace;
-    font-size: 20px;
-    text-shadow: 1px 1px 1px rgb(113, 112, 112);
-    padding-top: 10px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-}
-
-
-.form-container form label input{
-    display: flex;
-}
-
-.form-container form label select{
-    display: flex;
-    padding: 12px;
-    margin: 10px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    width: 325px;
-    font-size: 16px;
-    align-items: flex-start;
-} 
 .login-button
 {
-    border: 2px solid red;
     margin-top: 20px;
     color: aliceblue;
-    color: aliceblue;
     background-color: #212425;
-    text-decoration: none;
-    border: none;
-    font-family: fantasy;
+    font-family:monospace;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
     margin-top: 10px;
     border-radius: 20px;
     padding: 10px 20px;
@@ -70,14 +29,110 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.formElements
+.field
 {
-    display: flex;
-    flex-direction:row;
-    align-items:stretch;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0,0,0,0.2);
+  background-size:300px 400px;
+  padding-left: 50px;
+  border-radius: 25px;
+  padding-right: 100px;
+  padding-top: 30px;
 }
 
+.form-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+.form-container form{
+    height:100%;
+}
+
+.form-container form label{
+    font-size: 20px;
+    font-family:monospace;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-container form label input{
+  display: flex;
+  padding: 10px;
+  margin: 12px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  max-width:100%;
+  width:120%;
+  font-size: 16px;
+}
+
+.form-container form label select{
+  display: flex;
+    padding: 10px;
+    margin: 12px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    max-width: 110%;
+    width:200%;
+    font-size: 16px;
+} 
+
 .login-button:hover, .signup-button:hover{
-    background-color: #f479bf;
-    color: #212425;
+    background-color: #0d9aff;
+    color: black;
+  }
+
+  .login-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.7s;
+  }
+  .login-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .login-button:hover span {
+    padding-right: 15px;
+  }
+  .login-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .signup-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.7s;
+  }
+  .signup-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .signup-button:hover span {
+    padding-right: 15px;
+  }
+  .signup-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .info
+  {
+    font-family:monospace;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
   }

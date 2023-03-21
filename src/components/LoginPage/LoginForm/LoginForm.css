@@ -3,28 +3,28 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:60vh;
+    height:100%;
   }
   
-  input[type="text"],input[type="tel"],input[type="email"],input[type="date"],input[type="number"],
-  input[type="password"] {
-    padding: 10px;
-    margin: 15px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    font-size: 20px;
-  }
+input
+{
+  padding: 10px;
+  padding-left: 10%;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 78%;
+  font-size: 20px;
+}
   
   label {
+    padding-left: 10%;
     font-size: 20px;
     font-weight: bold;
-  }
-
-.submit-btn:hover, .signup-btn:hover{
-    background-color: #f479bf;
-    color: #212425;
+    font-family:monospace;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
   }
   
   .submit-btn
@@ -33,7 +33,8 @@ form {
     background-color: #212425;
     text-decoration: none;
     border: none;
-    font-family:fantasy;
+    font-family:monospace;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
     margin-top: 20px;
     border-radius: 20px;
     padding: 10px 10px;
@@ -48,11 +49,71 @@ form {
     background-color: #212425;
     text-decoration: none;
     border: none;
-    font-family:fantasy;
+    font-family:monospace;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
     margin-top: 10px;
     border-radius: 20px;
     padding: 10px 10px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  .option{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family:monospace;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgb(113, 112, 112);
+  }
+
+  .signup-btn:hover, .submit-btn:hover{
+    background-color: #0d9aff;
+    color: black;
+  }
+
+  .signup-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.7s;
+  }
+  .signup-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .signup-btn:hover span {
+    padding-right: 15px;
+  }
+  .signup-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .submit-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.7s;
+  }
+  .submit-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .submit-btn:hover span {
+    padding-right: 15px;
+  }
+  .submit-btn:hover span:after {
+    opacity: 1;
+    right: 0;
   }

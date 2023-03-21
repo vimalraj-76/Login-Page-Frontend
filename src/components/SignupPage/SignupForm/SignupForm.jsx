@@ -52,8 +52,8 @@ function SignupForm() {
         return;
       }
       try {
-        const response = await axios.post("http://localhost:5000/signup", data);
-        navigate("/");
+        const response = await axios.post("https://login-page-backend-3.onrender.com/signup", data);
+        navigate("https://login-page-backend-3.onrender.com/login");
       } catch (error) {
         if (error.response && error.response.status === 400) {
           alert(
@@ -78,9 +78,10 @@ function SignupForm() {
     'India',
   ];
 
-  return (<div className='form-container'>
+  return (
+  <div className='form-container'>
     <form>
-    <div className='formElements'>
+    <div className='field'>
       <label>
         Name:
         <input type="text" name="Name" value={formData.Name} onChange={handleChange} required />
@@ -91,8 +92,6 @@ function SignupForm() {
         <input type="tel" name="mobile" value={formData.mobile} onChange={handleChange} required />
       </label>
       <br />
-      </div>
-      <div className='formElements'>
       <label>
         Email:
         <input type="email" name="email" value={formData.email} onChange={handleChange} required />
@@ -103,11 +102,9 @@ function SignupForm() {
         <input type="number" name="age" value={formData.age} onChange={handleChange} required />
       </label>
       <br />
-      </div>
-      <div className='formElements'>
       <label>
         Country:
-        <select name="country" value={formData.country} onChange={handleChange} required>
+        <select className="selectValue" name="country" value={formData.country} onChange={handleChange} required>
           <option value="">Select Country</option>
           {countries.map((country) => (
             <option key={country} value={country}>
@@ -119,7 +116,7 @@ function SignupForm() {
       <br />
       <label>
         Gender:
-        <select name="gender" value={formData.gender} onChange={handleChange} required>
+        <select className="selectValue" name="gender" value={formData.gender} onChange={handleChange} required>
           <option value="">Select Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
@@ -127,22 +124,19 @@ function SignupForm() {
         </select>
       </label>
       <br />
-      </div>
-      <div className='formElements'>
-      <label>
+      <div style={{paddingBottom:"20px"}}><label>
         Date of Birth:
         <input type="date" name="dob" value={formData.dob} onChange={handleChange} required />
-      </label>
+      </label></div>
       <label>
           Password:
           <input type="password" name="password" value={formData.password} onChange={handleChange} required />
-      </label>   
-      </div>   
+      </label>     
       <br/>
-      <NavLink onClick={handleSubmit} className='signup-button'>Sign Up</NavLink>
-
-      <p>Already an User? <strong>Login below !!</strong></p>
-      <NavLink to="../" className='login-button'>Log In</NavLink>
+      </div>
+      <NavLink onClick={handleSubmit} className='signup-button'><span>Sign Up</span></NavLink>
+      <div className='info'><p>Already an User? <strong>Login below !!</strong></p></div>
+      <NavLink to="https://login-page-backend-3.onrender.com/login" className='login-button'><span>Log In</span></NavLink>
     </form>
     </div>);
 }
