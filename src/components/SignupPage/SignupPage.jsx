@@ -1,7 +1,7 @@
 import React from "react";
-import "./SignupPage.css"
-import profileLogo from '../sign-up.png';
-import SignupForm from "./SignupForm/SignupForm"
+import "./SignupPage.css";
+import profileLogo from './signUp.png';
+import SignupForm from "./SignupForm/SignupForm";
 function SignupPage()
 {
     return(<div className="signupPage">
