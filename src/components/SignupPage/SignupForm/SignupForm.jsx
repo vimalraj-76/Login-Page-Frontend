@@ -53,7 +53,7 @@ function SignupForm() {
       }
       try {
         const response = await axios.post("https://login-page-backend-3.onrender.com/signup", data);
-        navigate("/login");
+        navigate("/");
       } catch (error) {
         if (error.response && error.response.status === 400) {
           alert(
